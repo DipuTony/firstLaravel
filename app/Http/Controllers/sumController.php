@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class sumController extends Controller
 {
-    //
 
     public function sum(Request $req){
                 $var1 = $req->num1;
@@ -14,6 +13,6 @@ class sumController extends Controller
             
                 $sum = $var1 + $var2;
             
-                return response()->json(["Result is"=> $sum, "Status"=>true, "Data" => ["name"=>"test"]]);
+                return response()->json(["Result of $var1 and $var2 is "=> $sum, "Status"=>true, "Data" => ["name"=>"test"]]);
     }
 }
